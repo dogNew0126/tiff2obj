@@ -1,0 +1,11 @@
+libdir=E:\buildsystem\release-1930-x64
+includedir=E:\buildsystem\release-1930-x64\include
+enginesdir=E:\buildsystem\release-1930-x64\engines
+modulesdir=E:\buildsystem\release-1930-x64\providers
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 3.3.0
+Libs: -L${libdir} -lcrypto
+Libs.private: E:\buildsystem\release-1930-x64\lib\zlib.lib ws2_32.lib gdi32.lib advapi32.lib crypt32.lib user32.lib
+Cflags: -I${includedir}
